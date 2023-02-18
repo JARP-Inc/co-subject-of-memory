@@ -107,8 +107,10 @@ def main():
 
     def test():
         data_in = [[1, 3, 2, 4, 1], [3, 1, 2, 4, 3], [2, 3, 4, 1, 2], [2, 1, 4, 3, 1], [4, 1, 2, 3, 4]]
-        pin = decipher(data_in)
-        print(pin)
+        expected_output = "33311"
+        actual_output = decipher(data_in)
+        assert actual_output == expected_output
+        print("passed")
 
     # test()
 
